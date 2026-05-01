@@ -2,6 +2,7 @@
 title = Говорящий Глагол 3D
 package.name = glagol3d
 package.domain = com.kiwi12643.glagol
+source.dir = .
 version = 1.0
 source.include_exts = py,obj,mtl,jpg,jpeg,txt,zip,wav,png
 requirements = python3,kivy==2.1.0,pillow
