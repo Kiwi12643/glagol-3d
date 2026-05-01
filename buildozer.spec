@@ -38,7 +38,7 @@ android.copy_libs = 1
 android.arch = arm64-v8a
 
 # (int) Target Android API, should be as high as possible.
-android.api = 31
+android.api = 33
 
 # (int) Minimum API your APK will support.
 android.minapi = 21
