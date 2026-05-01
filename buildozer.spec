@@ -46,21 +46,77 @@ android.minapi = 21
 # (int) Android NDK version to use
 android.ndk = 23b
 
-# (int) Android SDK version to use
-android.sdk = 31
-
 # (list) Permissions
 android.permissions = INTERNET
 
 # (str) python-for-android branch to use, defaults to master
-p4a.branch = develop
+p4a.branch = master
 
 # (str) Bootstrap to use (sdl2, webview, service_only, etc.)
 p4a.bootstrap = sdl2
 
+# (list) Java classes to add as activities to the manifest
+# android.add_activities = 
+
+# (str) OU of the APK
+# android.ou = 
+
+# (str) The Android application category (e.g. Game, Communication)
+# android.appcategory = Game
+
+# (str) Which Gradle version to use (if using gradle build)
+# android.gradle_version = 3.1.4
+
+# (bool) Use AndroidX support library
+android.use_androidx = True
+
+# (bool) Enable Android App Bundle (AAB) for Play Store
+# android.enable_aab = False
+
+# (str) Android Gradle plugin version to use
+# android.gradle_plugin_version = 3.2.0
+
+# (int) Android Jetpack version
+# android.jetpack_version = 1.0.0
+
+# (str) AndroidX core version
+# android.androidx_core_version = 1.3.2
+
+# (str) AndroidX appcompat version
+# android.androidx_appcompat_version = 1.2.0
+
+# (list) Patterns to exclude from source
+#source.exclude_patterns = license,images/*.jpg
+
+# (list) List of activities android will integrate
+#android.add_activities = 
+
+# (str) Android manifest file to use (optional)
+#android.manifest = 
+
+# (bool) Skip the update of Android SDK
+#android.skip_update = False
+
+# (bool) Skip the easy configuration of the SDK
+#android.skip_easyconfig = False
+
+# (str) The path to an already existing fully-configured SDK
+#android.sdk_path = 
+
 #
-# OSX Specific
+# iOS specific
 #
+
+# (str) Path to a custom kivy-ios folder
+#ios.kivy_ios_dir = ../kivy-ios
+
+# (str) Name of the certificate to use for signing the debug version
+#ios.codesign.debug = "iPhone Developer: <lastname> <firstname> (<hexstring>)"
+
+# (str) Name of the certificate to use for signing the release version
+#ios.codesign.release = %(ios.codesign.debug)s
+
+
 [buildozer]
 
 # (int) Log level (0 = error only, 1 = info, 2 = debug (with command output))
